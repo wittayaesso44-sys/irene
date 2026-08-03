@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interior | IRENE DESIGN</title>
+<meta name="description" content="ผลงานออกแบบภายในโดย IRENE DESIGN">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0a0a0a;
+    --paper:#ffffff;
+    --line:#111111;
+    --max: 1240px;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    font-family:'Prompt','Poppins',sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.7;
+  }
+
+  img{ max-width:100%; display:block; }
+
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 40px;
+  }
+
+  a{ color:inherit; text-decoration:none; }
+
+  /* ---------- Header ---------- */
+  header{
+    padding-top:36px;
+  }
+
+  .header-top{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+  }
+
+  .logo{
+    font-family:'Poppins',sans-serif;
+    font-weight:800;
+    font-size:clamp(28px, 4vw, 40px);
+    letter-spacing:1px;
+    text-transform:uppercase;
+  }
+
+  .socials{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-top:8px;
+  }
+
+  .socials img{
+    width:26px;
+    height:26px;
+  }
+
+  nav{
+    margin-top:22px;
+    padding-bottom:18px;
+    border-bottom:1.5px solid var(--line);
+    display:flex;
+    gap:36px;
+    flex-wrap:wrap;
+  }
+
+  nav a{
+    font-family:'Poppins',sans-serif;
+    font-size:15px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    font-weight:500;
+    transition:opacity .2s ease;
+  }
+
+  nav a:hover{ opacity:.55; }
+
+  nav a.active{
+    font-weight:700;
+    border-bottom:2px solid var(--ink);
+    padding-bottom:4px;
+  }
+
+  /* ---------- Page title ---------- */
+  .page-title{
+    text-align:center;
+    font-family:'Poppins',sans-serif;
+    font-weight:800;
+    font-size:clamp(30px, 4vw, 42px);
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin:64px 0 56px;
+  }
+
+  /* ---------- Portfolio grid ---------- */
+  .portfolio{
+    padding-bottom:120px;
+  }
+
+  .portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:36px 36px;
+  }
+
+  .portfolio-item{
+    padding-bottom:0;
+    display:block;
+  }
+
+  .portfolio-item .crop{
+    aspect-ratio:7/5;
+    overflow:hidden;
+    background:#eee;
+  }
+
+  .portfolio-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .5s ease;
+  }
+
+  .portfolio-item:hover img{
+    transform:scale(1.05);
+  }
+
+  .portfolio-tag{
+    display:block;
+    width:max-content;
+    margin:14px auto 0;
+    background:#fff;
+    border:1.3px solid #9a9a9a;
+    color:var(--ink);
+    font-family:'Prompt',sans-serif;
+    font-weight:500;
+    font-size:12px;
+    letter-spacing:0.5px;
+    padding:6px 18px;
+    border-radius:999px;
+    white-space:nowrap;
+    text-align:center;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:#000;
+    color:#fff;
+  }
+
+  .footer-inner{
+    padding:26px 40px;
+    max-width:var(--max);
+    margin:0 auto;
+    font-family:'Poppins',sans-serif;
+    font-weight:600;
+    letter-spacing:1.5px;
+    font-size:14px;
+    text-transform:uppercase;
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1080px){
+    .wrap{ padding:0 24px; }
+    .portfolio-grid{ grid-template-columns:repeat(2, 1fr); }
+    nav{ gap:20px 28px; }
+  }
+
+  @media (max-width: 560px){
+    header{ padding-top:24px; }
+    .page-title{ margin:44px 0 40px; }
+    .portfolio-grid{ grid-template-columns:1fr; gap:44px; }
+    .socials img{ width:22px; height:22px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="header-top">
+      <a class="logo" href="index.html">Irene Design</a>
+      <div class="socials">
+        <a href="https://www.facebook.com/Irene.designn" target="_blank" rel="noopener" aria-label="Facebook"><img src="icon-facebook.png" alt="Facebook"></a>
+        <a href="https://lin.ee/PZLf6zy" target="_blank" rel="noopener" aria-label="Line"><img src="icon-line.png" alt="Line"></a>
+        <a href="#" aria-label="Phone"><img src="icon-phone.png" alt="Phone"></a>
+        <a href="#" aria-label="YouTube"><img src="icon-youtube.png" alt="YouTube"></a>
+        <a href="https://www.instagram.com/irenedesign.official?igsh=MW10NDZtMWFtenY2Yw%3D%3D" target="_blank" rel="noopener" aria-label="Instagram"><img src="icon-instagram.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@irenedesignofficial" target="_blank" rel="noopener" aria-label="TikTok"><img src="icon-tiktok.png" alt="TikTok"></a>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="design.html">Design</a>
+      <a href="construction.html">Construction</a>
+      <a href="interior.html" class="active">Interior</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="portfolio">
+  <div class="wrap">
+    <h1 class="page-title">Interior</h1>
+    <div class="portfolio-grid">
+      <a class="portfolio-item" href="interior-ir002.html"><figure><div class="crop"><img src="interior-ir002.jpg" alt="IR002"></div><span class="portfolio-tag">IR002</span></figure></a>
+      <a class="portfolio-item" href="interior-ir005.html"><figure><div class="crop"><img src="interior-ir005.jpg" alt="IR005"></div><span class="portfolio-tag">IR005</span></figure></a>
+      <a class="portfolio-item" href="interior-ir006.html"><figure><div class="crop"><img src="interior-ir006.jpg" alt="IR006"></div><span class="portfolio-tag">IR006</span></figure></a>
+      <a class="portfolio-item" href="interior-ir008.html"><figure><div class="crop"><img src="interior-ir008.jpg" alt="IR008"></div><span class="portfolio-tag">IR008</span></figure></a>
+      <a class="portfolio-item" href="interior-ir013.html"><figure><div class="crop"><img src="interior-ir013.jpg" alt="IR013"></div><span class="portfolio-tag">IR013</span></figure></a>
+      <a class="portfolio-item" href="interior-ir019.html"><figure><div class="crop"><img src="interior-ir019.jpg" alt="IR019"></div><span class="portfolio-tag">IR019</span></figure></a>
+    </div>
+  </div>
+</main>
+
+<footer id="contact">
+  <div class="footer-inner">Irene Design</div>
+</footer>
+
+</body>
+</html>
